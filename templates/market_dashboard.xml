@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+ <Name>Market Dashboard</Name>
+   <Overview>
+    Market overview dashboard, multi-user stock tracking dashboard
+   </Overview>
+
+   <Category>Productivity: Status:Stable</Category>
+
+   <Registry>ghcr.io/julkramer3g/docker_template_gcr</Registry>
+
+   <Privileged>false</Privileged>
+
+   <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
+
+   <Network>host</Network>
+
+   <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+
+   <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+   
+   <Config 
+       Type="Path" 
+       Name="Config directory" 
+       Target="/config" 
+       Default="/mnt/user/appdata/market_dashboard" 
+       Mode="rw" 
+       Description="This is where the files and configuration are stored"
+       Required="true">/mnt/user/appdata/market_dashboard</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="Environment variable" 
+       Target="MY_TEST_VAR" 
+       Default="testtext" 
+       Description="Environment variable for testing" 
+       Mask="false" 
+       Display="always" 
+       Required="true">Username</Config>
+
+ </Container>
