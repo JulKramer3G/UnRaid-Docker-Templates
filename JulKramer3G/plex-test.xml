@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/plex.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>binhex-plex-test</Name>
+  <Name>JulKramer3G-plex-test</Name>
   <Description>
     [b]Description[/b][br]
     The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
