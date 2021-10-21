@@ -17,7 +17,7 @@ Market overview dashboard, multi-user stock tracking dashboard
 
    <WebUI>http://[IP]:[PORT:3000]/main.html</WebUI>
 
-   <Icon>https://github.com/JulKramer3G/UnRaid-Docker-Templates/blob/master/icons/market_dashboard.png</Icon>
+   <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/market_dashboard.png</Icon>
    
    <Config 
        Type="Variable" 
