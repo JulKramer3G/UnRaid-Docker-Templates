@@ -7,7 +7,7 @@ Market overview dashboard, multi-user stock tracking dashboard
 
    <Category>Productivity: Status:Stable</Category>
 
-   <Repository>ghcr.io/julkramer3g/docker_express_webserver</Repository>
+   <Repository>ghcr.io/julkramer3g/market_overview_dashboard</Repository>
 
    <Privileged>false</Privileged>
 
