@@ -32,7 +32,7 @@ Market overview dashboard, multi-user stock tracking dashboard
     <Config 
        Type="Path" 
        Name="Config directory" 
-       Target="/config" 
+       Target="/config_host" 
        Default="/mnt/user/appdata/marketdashboard" 
        Mode="rw" 
        Description="This is where the files and configuration are stored"
