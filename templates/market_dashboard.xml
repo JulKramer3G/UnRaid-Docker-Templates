@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
  <Container version="2">
- <Name>Market-Dashboard</Name>
+ <Name>MarketDashboard</Name>
    <Overview>
 Market overview dashboard, multi-user stock tracking dashboard
    </Overview>
@@ -28,5 +28,14 @@ Market overview dashboard, multi-user stock tracking dashboard
        Mask="false" 
        Display="always" 
        Required="true">3000</Config>
+
+    <Config 
+       Type="Path" 
+       Name="Config directory" 
+       Target="/config" 
+       Default="/mnt/user/appdata/marketdashboard" 
+       Mode="rw" 
+       Description="This is where the files and configuration are stored"
+       Required="true">/mnt/user/appdata/marketdashboard</Config>
 
  </Container>
