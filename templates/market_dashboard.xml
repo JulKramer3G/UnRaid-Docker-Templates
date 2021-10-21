@@ -7,7 +7,7 @@
 
    <Category>Productivity: Status:Stable</Category>
 
-   <Registry>ghcr.io/julkramer3g/docker_template_gcr</Registry>
+   <Repository>ghcr.io/julkramer3g/docker_template_gcr</Repository>
 
    <Privileged>false</Privileged>
 
