@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
  <Container version="2">
- <Name>Market Dashboard</Name>
+ <Name>Market-Dashboard</Name>
    <Overview>
-    Market overview dashboard, multi-user stock tracking dashboard
+Market overview dashboard, multi-user stock tracking dashboard
    </Overview>
 
    <Category>Productivity: Status:Stable</Category>
@@ -15,27 +15,18 @@
 
    <Network>host</Network>
 
-   <WebUI>http://[IP]:[PORT:60000]/web/index.html</WebUI>
+   <WebUI>http://[IP]:[PORT:3000]/web/index.html</WebUI>
 
-   <Icon>https://github.com/JulKramer3G/UnRaid_Docker_Templates/blob/main/icons/market_dashboard.png</Icon>
+   <Icon>https://github.com/JulKramer3G/UnRaid-Docker-Templates/blob/master/icons/market_dashboard.png</Icon>
    
    <Config 
-       Type="Path" 
-       Name="Config directory" 
-       Target="/config" 
-       Default="/mnt/user/appdata/market_dashboard" 
-       Mode="rw" 
-       Description="This is where the files and configuration are stored"
-       Required="true">/mnt/user/appdata/market_dashboard</Config>
-
-   <Config 
        Type="Variable" 
-       Name="Environment variable" 
-       Target="MY_TEST_VAR" 
-       Default="testtext" 
-       Description="Environment variable for testing" 
+       Name="Web UI port" 
+       Target="WEB_UI_PORT" 
+       Default="3000" 
+       Description="The port on which the web interface is accessed" 
        Mask="false" 
        Display="always" 
-       Required="true">Username</Config>
+       Required="true">3000</Config>
 
  </Container>
