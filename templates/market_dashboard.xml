@@ -13,7 +13,7 @@ Market overview dashboard, multi-user stock tracking dashboard
 
    <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
 
-   <Network>host</Network>
+   <Network>bridge</Network>
 
    <WebUI>http://[IP]:[PORT:80]/</WebUI>
 
