@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
  <Container version="2">
- <Name>MarketDashboard</Name>
+ <Name>Market-Dashboard</Name>
    <Overview>
 Market overview dashboard, multi-user stock tracking dashboard
    </Overview>
