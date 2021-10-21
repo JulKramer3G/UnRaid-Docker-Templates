@@ -15,19 +15,9 @@ Market overview dashboard, multi-user stock tracking dashboard
 
    <Network>host</Network>
 
-   <WebUI>http://[IP]:[PORT:3000]/main.html</WebUI>
+   <WebUI>http://[IP]:[PORT:80]/</WebUI>
 
    <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/market_dashboard.png</Icon>
-   
-   <Config 
-       Type="Variable" 
-       Name="Web UI port" 
-       Target="WEB_UI_PORT" 
-       Default="3000" 
-       Description="The port on which the web interface is accessed" 
-       Mask="false" 
-       Display="always" 
-       Required="true">3000</Config>
 
     <Config 
        Type="Path" 
@@ -37,5 +27,15 @@ Market overview dashboard, multi-user stock tracking dashboard
        Mode="rw" 
        Description="This is where the files and configuration are stored"
        Required="true">/mnt/user/appdata/marketdashboard</Config>
+
+   <Config 
+       Type="Port" 
+       Name="MarketDashboard Web UI Http Port" 
+       Target="80" 
+       Default="3000" 
+       Mode="tcp" 
+       Description="Port for http access" 
+       Display="always" 
+       Required="true">3000</Config>
 
  </Container>
