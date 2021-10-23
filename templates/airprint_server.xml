@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+ <Name>AirPrint-Server</Name>
+   <Overview>
+AirPrint server based on drpsychick/airprint-bridge
+   </Overview>
+
+   <Category>Productivity: Status:Stable</Category>
+
+   <Repository>drpsychick/airprint-bridge</Repository>
+   <GitHub>https://github.com/DrPsychick/docker-cups-airprint</GitHub>
+
+   <Privileged>false</Privileged>
+
+   <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
+
+   <Network>bridge</Network>
+
+   <WebUI>http://[IP]:[PORT:631]/</WebUI>
+
+   <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/airprint_server.png</Icon>
+
+    <Config 
+       Type="Path" 
+       Name="Config directory" 
+       Target="/etc/cups" 
+       Default="/mnt/user/appdata/airprintserver" 
+       Mode="rw" 
+       Description="This is where the files and configuration are stored"
+       Required="true">/mnt/user/appdata/airprintserver</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="Enable web interface" 
+       Target="CUPS_WEBINTERFACE" 
+       Default="yes" 
+       Description="Enable web interface, set to yes to enable" 
+       Mask="false" 
+       Display="advanced" 
+       Required="true">yes</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="Enable remote admin access" 
+       Target="CUPS_REMOTE_ADMIN" 
+       Default="yes" 
+       Description="Enable remote admin access" 
+       Mask="false" 
+       Display="advanced" 
+       Required="true">yes</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="AirPrint configuration web panel username" 
+       Target="CUPS_ADMIN_USER" 
+       Default="admin" 
+       Description="AirPrint configuration web panel username" 
+       Mask="false" 
+       Display="always" 
+       Required="true">admin</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="AirPrint configuration web panel password" 
+       Target="CUPS_ADMIN_PASSWORD" 
+       Default="airprintPassword!" 
+       Description="AirPrint configuration web panel password" 
+       Mask="false" 
+       Display="always" 
+       Required="true">airprintPassword!</Config>
+
+   <Config 
+       Type="Port" 
+       Name="AirPrint server Web UI Http Port" 
+       Target="631" 
+       Default="631" 
+       Mode="tcp" 
+       Description="Port for http access" 
+       Display="advanced" 
+       Required="true">631</Config>
+
+ </Container>
