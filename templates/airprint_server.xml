@@ -7,7 +7,7 @@ AirPrint server based on drpsychick/airprint-bridge
 
    <Category>Productivity: Status:Stable</Category>
 
-   <Repository>ghcr.io/julkramer3g/docker-cups-airprint</Repository>
+   <Repository>ghcr.io/julkramer3g/docker-cups-airprint:latest</Repository>
    <GitHub>https://github.com/DrPsychick/docker-cups-airprint</GitHub>
 
    <Privileged>false</Privileged>
