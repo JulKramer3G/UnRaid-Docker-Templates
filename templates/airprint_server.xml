@@ -7,7 +7,7 @@ AirPrint server based on drpsychick/airprint-bridge
 
    <Category>Productivity: Status:Stable</Category>
 
-   <Repository>drpsychick/airprint-bridge</Repository>
+   <Repository>ghcr.io/julkramer3g/docker_cups_airprint</Repository>
    <GitHub>https://github.com/DrPsychick/docker-cups-airprint</GitHub>
 
    <Privileged>false</Privileged>
@@ -23,7 +23,7 @@ AirPrint server based on drpsychick/airprint-bridge
     <Config 
        Type="Path" 
        Name="Config directory" 
-       Target="/etc/cups" 
+       Target="/cups_config" 
        Default="/mnt/user/appdata/airprintserver" 
        Mode="rw" 
        Description="This is where the files and configuration are stored"
