@@ -16,7 +16,7 @@ AirPrint server based on drpsychick/airprint-bridge
 
    <Network>bridge</Network>
 
-   <WebUI>http://[IP]:[PORT:631]/</WebUI>
+   <WebUI>https://[IP]:[PORT:631]/</WebUI>
 
    <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/airprint_server.png</Icon>
 
