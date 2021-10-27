@@ -23,7 +23,7 @@ Web server that checks the presence of network devices using ARP requests.
     <Config 
        Type="Path" 
        Name="Config directory" 
-       Target="/database" 
+       Target="/usr/workdir/database" 
        Default="/mnt/user/appdata/who_is_home" 
        Mode="rw" 
        Description="This is where the configuration file is stored"
