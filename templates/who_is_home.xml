@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+ <Name>Who-Is-Home</Name>
+   <Overview>
+Web server that checks the presence of network devices using ARP requests.
+   </Overview>
+
+   <Category>Productivity: Status:Stable</Category>
+
+   <Repository>ghcr.io/julkramer3g/who_is_home:latest</Repository>
+   <GitHub>https://github.com/DrPsychick/Who_Is_Home</GitHub>
+
+   <Privileged>false</Privileged>
+
+   <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
+
+   <Network>bridge</Network>
+
+   <WebUI>https://[IP]:[PORT:80]/</WebUI>
+
+   <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/who_is_home.png</Icon>
+
+    <Config 
+       Type="Path" 
+       Name="Config directory" 
+       Target="/database" 
+       Default="/mnt/user/appdata/who_is_home" 
+       Mode="rw" 
+       Description="This is where the configuration file is stored"
+       Required="true">/mnt/user/appdata/who_is_home</Config>
+
+   <Config 
+       Type="Port" 
+       Name="Who-is-home Web UI Http Port" 
+       Target="80" 
+       Default="3435" 
+       Mode="tcp" 
+       Description="Port for http access" 
+       Display="advanced" 
+       Required="true">3435</Config>
+
+ </Container>
