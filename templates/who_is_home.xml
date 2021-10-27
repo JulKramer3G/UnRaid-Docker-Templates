@@ -16,7 +16,7 @@ Web server that checks the presence of network devices using ARP requests.
 
    <Network>bridge</Network>
 
-   <WebUI>https://[IP]:[PORT:80]/</WebUI>
+   <WebUI>http://[IP]:[PORT:80]/</WebUI>
 
    <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/who_is_home.png</Icon>
 
