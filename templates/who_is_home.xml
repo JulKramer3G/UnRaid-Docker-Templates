@@ -14,9 +14,9 @@ Web server that checks the presence of network devices using ARP requests.
 
    <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
 
-   <Network>bridge</Network>
+   <Network>host</Network>
 
-   <WebUI>http://[IP]:[PORT:80]/</WebUI>
+   <WebUI>http://[IP]:[PORT:3435]/</WebUI>
 
    <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/who_is_home.png</Icon>
 
@@ -28,15 +28,5 @@ Web server that checks the presence of network devices using ARP requests.
        Mode="rw" 
        Description="This is where the configuration file is stored"
        Required="true">/mnt/user/appdata/who_is_home</Config>
-
-   <Config 
-       Type="Port" 
-       Name="Who-is-home Web UI Http Port" 
-       Target="80" 
-       Default="3435" 
-       Mode="tcp" 
-       Description="Port for http access" 
-       Display="advanced" 
-       Required="true">3435</Config>
 
  </Container>
