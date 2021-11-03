@@ -19,7 +19,7 @@
 
    <WebUI>https://[IP]:[PORT:1433]/</WebUI>
 
-   <Icon>https://mcrflowprodcentralus.blob.core.windows.net/defaultlogo/Microsoft_logo.svg?sp=r&st=2019-01-19T00:10:26Z&se=2033-11-04T07:10:26Z&spr=https&sv=2018-03-28&sig=dRn%2BJsqcKwsVdAMcdkzPAbydqSC%2BzBS9BwJUI9AflR4%3D&sr=b</Icon>
+   <Icon>https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg</Icon>
 
     <Config 
        Type="Path" 
