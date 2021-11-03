@@ -37,7 +37,7 @@
        Default="Y" 
        Description="Accept EULA" 
        Mask="false" 
-       Display="advanced" 
+       Display="always" 
        Required="true">Y</Config>
 
    <Config 
