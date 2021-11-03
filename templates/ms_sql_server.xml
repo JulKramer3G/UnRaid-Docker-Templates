@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+ <Name>Microsoft SQL Express Server</Name>
+   <Overview>
+   Docker template to execute the official Microsoft SQL Server on UnRaid. 
+   See https://hub.docker.com/_/microsoft-mssql-server for details.
+   No responsibility is taken. Use at your own risk. 
+   </Overview>
+
+   <Category>Productivity: Status:Stable</Category>
+
+   <Repository>mcr.microsoft.com/mssql/server:2019-latest</Repository>
+
+   <Privileged>false</Privileged>
+
+   <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
+
+   <Network>bridge</Network>
+
+   <WebUI>https://[IP]:[PORT:1433]/</WebUI>
+
+   <Icon>https://mcrflowprodcentralus.blob.core.windows.net/defaultlogo/Microsoft_logo.svg?sp=r&st=2019-01-19T00:10:26Z&se=2033-11-04T07:10:26Z&spr=https&sv=2018-03-28&sig=dRn%2BJsqcKwsVdAMcdkzPAbydqSC%2BzBS9BwJUI9AflR4%3D&sr=b</Icon>
+
+    <Config 
+       Type="Path" 
+       Name="SQL Server data directory" 
+       Target="/var/opt/mssql" 
+       Default="/mnt/user/appdata/ms_sql_express_server" 
+       Mode="rw" 
+       Description="This is where the files and configuration are stored"
+       Required="true">/mnt/user/appdata/ms_sql_express_server</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="Accept EULA" 
+       Target="ACCEPT_EULA" 
+       Default="Y" 
+       Description="Accept EULA" 
+       Mask="false" 
+       Display="advanced" 
+       Required="true">Y</Config>
+
+   <Config 
+       Type="Variable" 
+       Name="Database system administrator (userid = 'sa') password used to connect to SQL Server once the container is running. Important note: This password needs to include at least 8 characters of at least three of these four categories: uppercase letters, lowercase letters, numbers and non-alphanumeric symbols." 
+       Target="SA_PASSWORD" 
+       Default="sqlStrong(!)Password" 
+       Description="Database system administrator (userid = 'sa') password used to connect to SQL Server once the container is running. Important note: This password needs to include at least 8 characters of at least three of these four categories: uppercase letters, lowercase letters, numbers and non-alphanumeric symbols." 
+       Mask="false" 
+       Display="always" 
+       Required="true">sqlStrong(!)Password</Config>
+
+<Config 
+       Type="Variable" 
+       Name="Server Edition, is the Product ID (PID) or Edition that the container will run with. Acceptable values:
+Developer : This will run the container using the Developer Edition (this is the default if no MSSQL_PID environment variable is supplied)
+Express : This will run the container using the Express Edition
+Standard : This will run the container using the Standard Edition
+Enterprise : This will run the container using the Enterprise Edition
+EnterpriseCore : This will run the container using the Enterprise Edition Core" 
+       Target="MSSQL_PID" 
+       Default="Express" 
+       Description="Server Edition, is the Product ID (PID) or Edition that the container will run with. Acceptable values:
+Developer : This will run the container using the Developer Edition (this is the default if no MSSQL_PID environment variable is supplied)
+Express : This will run the container using the Express Edition
+Standard : This will run the container using the Standard Edition
+Enterprise : This will run the container using the Enterprise Edition
+EnterpriseCore : This will run the container using the Enterprise Edition Core
+" 
+       Mask="false" 
+       Display="advanced" 
+       Required="true">Express</Config>
+
+   <Config 
+       Type="Port" 
+       Name="SQL Port" 
+       Target="1433" 
+       Default="1433" 
+       Mode="tcp" 
+       Description="Port for http access" 
+       Display="advanced" 
+       Required="true">1433</Config>
+
+ </Container>
