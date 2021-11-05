@@ -17,9 +17,9 @@
 
    <Network>bridge</Network>
 
-   <WebUI>https://[IP]:[PORT:1433]/</WebUI>
+   <!-- <WebUI>https://[IP]:[PORT:1433]/</WebUI> -->
 
-   <Icon>https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg</Icon>
+   <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/768px-Microsoft_logo.svg.png</Icon>
 
     <Config 
        Type="Path" 
