@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+ <Name>Smart-Home-Logger</Name>
+   <Overview>
+Smart home data logger
+   </Overview>
+
+   <Category>Productivity: Status:Stable</Category>
+
+   <Repository>ghcr.io/julkramer3g/smart_home_logger:latest</Repository>
+   <GitHub>https://github.com/JulKramer3G/Smart_Home_Logger</GitHub>
+
+   <Privileged>false</Privileged>
+
+   <Support>https://github.com/JulKramer3G/UnRaid_Docker_Templates</Support>
+
+   <Network>host</Network>
+
+   <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/smart_home_logger.png</Icon>
+
+    <Config 
+       Type="Path" 
+       Name="Config directory" 
+       Target="/config" 
+       Default="/mnt/user/appdata/airprintserver" 
+       Mode="rw" 
+       Description="This is where the configuration is stored"
+       Required="true">/mnt/user/appdata/smarthomelogger</Config>
+
+ </Container>
