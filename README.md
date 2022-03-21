@@ -11,3 +11,21 @@
 
 * Use the template when creating a new container:
 ![alt](images/choose_template_unraid.png)
+
+### Note: Private repositories
+To be able to pull private repositories from github container registry, you have to create a access token first, go to https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token:
+
+On the *UNRAID console*, do the following:
+
+Save your token to an environment variable:
+```
+$ export CR_PAT=YOUR_TOKEN
+```
+
+Login to GitHub container registry using:
+```
+$ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+> Login Succeeded
+```
+
+Then, you can pull / run the image.
