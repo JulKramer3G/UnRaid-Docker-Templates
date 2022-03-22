@@ -18,13 +18,22 @@ Smart home data logger
 
    <Icon>https://raw.githubusercontent.com/JulKramer3G/UnRaid-Docker-Templates/master/icons/smart_home_logger.png</Icon>
 
-    <Config 
+   <Config 
        Type="Path" 
        Name="Config directory" 
-       Target="/config" 
-       Default="/mnt/user/appdata/airprintserver" 
+       Target="/usr/workdir/config" 
+       Default="/mnt/user/appdata/smarthomelogger/config" 
        Mode="rw" 
        Description="This is where the configuration is stored"
-       Required="true">/mnt/user/appdata/smarthomelogger</Config>
+       Required="true">/mnt/user/appdata/smarthomelogger/config</Config>
+
+   <Config 
+       Type="Path" 
+       Name="Client certificates directory" 
+       Target="/usr/workdir/client_certificates" 
+       Default="/mnt/user/appdata/smarthomelogger/client_certificates" 
+       Mode="rw" 
+       Description="This is where the client certificates are stored"
+       Required="true">/mnt/user/appdata/smarthomelogger/client_certificates</Config>
 
  </Container>
